@@ -1,0 +1,33 @@
+<div class="container texto_contacto">
+    <h6> Podes escribirme a nazarenoventrelli@gmail.com o dejarme un mensaje mediante este formulario.</h6>
+</div>
+<div class="container contactoBox">
+
+    <div class="card z-depth-4 formContacto">
+        <form action="GuardarMensaje " method="post">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input name="nombre" type="text" class="materialize-textarea">
+                    <label for="nombre">Nombre</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input name="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea name="mensaje" class="materialize-textarea"></textarea>
+                    <label for="mensaje">Mensaje</label>
+                </div>
+            </div>
+            <div class=" row">
+                <div class=" right">
+                    <button type="submit" id="btn_enviar" class=" waves-effect waves-light btn-small">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
