@@ -1,0 +1,35 @@
+<div class="container contactContainer s12">
+    <div class=" contactText">
+        <h6> You can write me to nazarenventrelli@gmail.com or leave a message using this form</h6>
+    </div>
+    <div class="container">
+        <div class=" contactBox">
+            <div class="card z-depth-4 formContacto">
+                <form class="" (submit)="sendEmail($event)">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input name="user_name" type="text" placeholder="Name" class="materialize-textarea">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input name="reply_to" type="email" placeholder="Email" class="validate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea name="message" placeholder="Message"
+                                class="messageTextArea materialize-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class=" row">
+                        <div class=" right">
+                            <button type="submit" value="Send"
+                                class="sendButton waves-effect waves-light btn-small">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

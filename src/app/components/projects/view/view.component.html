@@ -1,0 +1,33 @@
+<div class="detailsContainer">
+    <h2>{{project?.name}}</h2>
+    <div class="row">
+        <div class="divider"> </div>
+    </div>
+    <div class="row mainContainer">
+        <div class="col l6 imgColumn">
+            <img src="{{project?.mainImage}}" class="projectImage">
+        </div>
+        <div class="col l6 projectDescription">
+            <div [innerHTML]=project?.description></div>
+        </div>
+        <div class="linksContainer"> <a class="waves-effect waves-light btn-git btn-small"
+                href="{{project?.githubUrl}}">See code <i class="fa fa-github fa-lg"></i></a>
+                <a *ngIf="project?.demoUrl" class="waves-effect waves-light btn-small" href="{{project?.demoUrl}}">See
+                    site</a>        </div>
+    </div>
+    <div class="row">
+        <div class="divider"> </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row ">
+            <ng-container *ngFor="let photo of project?.photos">
+                <div class="col s12 m6 l4">
+                    <img [src]="photo" zoom  class="materialbox responsive-img">
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
+</div>

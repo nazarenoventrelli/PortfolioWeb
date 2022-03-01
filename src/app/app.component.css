@@ -1,0 +1,22 @@
+    .subscribeForm{
+        height:10px;
+        margin-bottom: 40px;
+    }
+
+    footer .row{
+        margin-top:10px;
+        
+    }
+
+    footer form{
+        display: flex;
+    }
+
+    footer input{
+        width: 240px;
+    }
+
+    footer button{
+        margin-top: 6px;
+        margin-left: 12px;
+    }

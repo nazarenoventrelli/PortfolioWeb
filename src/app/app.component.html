@@ -4,41 +4,25 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121965203-1"></script> -->
-  <!-- <script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121965203-1"></script>
+  <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-121965203-1');
-    </script> -->
+    </script>
 
-  <meta name="viewport" content="width=device-width" />
   <title>Nazareno Ventrelli </title>
-  <!--  <link rel="stylesheet" type="text/css" href="~/css/font-awesome.min.css">-->
 
   <link type="text/css" rel="stylesheet" href="/assets/css//materialize.min.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-
-  <link href="/assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
-  <link href="/assets/css/estilosGeneral.css" rel="stylesheet" type="text/css" />
-
-  <script src="/assets/js/jquery-3.3.1.js"></script>
-  <script src="/assets/js/jquery.blockUI.js"></script>
-  <script src="/assets/js/jquery-ui.js" type="text/javascript"></script>
-  <!-- <script src="~/js/mensajes.js"></script> -->
   <script type="text/javascript" src="/assets/js/materialize.min.js"></script>
-
 
 </head>
 
 <body>
 
-  <header></header>
   <main>
     <nav class="nav-wrapper  z-depth-4 ">
 
@@ -53,7 +37,7 @@
 
       </div>
 
-      <ul class="right panelDer">
+      <ul class="right rightPanel">
         <div class="col s4">
           <div class="row">
             <li><a href="https://github.com/nazarenoventrelli" class="fa fa-github fa-lg"> </a></li>
@@ -64,7 +48,7 @@
       </ul>
     </nav>
 
-    <section class="contenedorPrincipal">
+    <section class="mainContainer">
 
 
       <router-outlet></router-outlet>
@@ -74,21 +58,18 @@
   </main>
 
   <footer>
+    <div class="divider"> </div>
     <div class="row">
-      <div class="divider"> </div>
-    </div>
-    <div class="row">
-      <span class="col l3 left ">© 2018 Nazareno Ventrelli </span>
-      <div class="col l5 right">
-        <div class="row">
-          <span id="labelSubscripcion"> Recibi una notificacion cuando termine mi nuevo proyecto </span>
-        </div>
-        <input name="email" id="texto_suscribirEmail" type="email" class="validate" value="Tu email">
-        <a class="waves-effect waves-light btn-small" id="btn_suscribirEmail">Enviar</a>
+      <div class="col l3 left "> © 2018 Nazareno Ventrelli </div>
+      <div class="col l4 right">
+        <span> Receive a notification when i finish a new project </span>
+        <form (submit)="subscribe($event)" class="subscribeForm">
+          <input name="reply_to" type="email" class="validate" placeholder="your email">
+          <button type="submit" value="Send" class="sendButton waves-effect waves-light btn-small">Send</button>
+        </form>
       </div>
     </div>
   </footer>
-  <!-- <script src="~/js/scriptLayoutHome.js" type="text/javascript"></script> -->
 </body>
 
 </html>

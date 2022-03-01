@@ -1,0 +1,16 @@
+a{
+    margin-right: 10px;
+}
+
+.open{
+    display:inline-block;
+}
+
+.close{
+    display:none;
+}
+
+.card-image  > img{
+    height: 206px !important;
+    width: 290px !important;
+}
